@@ -15,7 +15,7 @@ public class MathClass {
         //gives you the number positive if its negative
         //result = Math.abs(-5);
 
-        result = Math.sqrt();
+        result = Math.sqrt(8);
 
         System.out.println(result);
     }
