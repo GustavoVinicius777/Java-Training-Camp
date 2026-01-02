@@ -1,47 +1,69 @@
 import java.util.Scanner;
 
-//feito sem tutorial totalmente de cabeça.
-//dia: 25/12/2025
-
 public class messingaround {
     public static void main(String[] args){
         Scanner teste = new Scanner(System.in);
 
-        double x;
-        double y;
-        int resp;
-        double z1;
-        double z2;
-        double z3;
-        double z4;
+        double userinput1;
+        double userinput2;
+        double userinput3;
 
-        System.out.print("escolha o primeiro numero para sua conta: ");
-        x = teste.nextDouble();
-        
-        System.out.print("escolha o segundo numero para a sua conta: ");
-        y = teste.nextDouble();
+        double answer;
 
-        z1 = x + y;
-        z2 = x - y;
-        z3 = x * y;
-        z4 = x / y;
-        
-        System.out.print("que tipo de conta gostaria de fazer: [1] adição, [2] subtração, [3] multiplicação, [4] divisão: ");
-        resp = teste.nextInt();
-        
-        if(resp == 1){
-            System.out.println("o resultado da sua adição é: " + z1);
+        System.out.print("Que tipo de operação deseja fazer: 1[adição], 2[subtração], 3[divisão], 4[multiplicação]: ");
+        userinput1 = teste.nextDouble();
+
+        if(userinput1 == 1){
+            System.out.print("por favor escolha o primeiro numero para a adição: ");
+            userinput2 = teste.nextDouble();
+
+            System.out.print("por favor escolha o segundo numero para a adição: ");
+            userinput3 = teste.nextDouble();
+
+            answer = userinput2 + userinput3;
+
+            System.out.print("o resultado da adição é: " + answer);
         }
-        else if(resp == 2){
-            System.out.println("o resultado da sua subtração é: " + z2);
+
+        else if(userinput1 == 2){
+            System.out.print("por favor escolha o primeiro numero para a subtração: ");
+            userinput2 = teste.nextDouble();
+
+            System.out.print("por favor escolha o segundo numero para a subtração: ");
+            userinput3 = teste.nextDouble();
+
+            answer = userinput2 - userinput3;
+
+            System.out.println("o resultado da sua subtração é: " + answer);
         }
-        else if(resp == 3){
-            System.out.println("o resultado da sua multiplicação é: " + z3);
+
+        else if(userinput1 == 3){
+            System.out.print("por favor escolha o primeiro numero para a divisão: ");
+            userinput2 = teste.nextDouble();
+
+            System.out.print("por favor escolha o segundo numero para a divisão: ");
+            userinput3 = teste.nextDouble();
+
+            answer = userinput2 / userinput3;
+
+            System.out.println("a resposta da sua divisão é: " + answer);
         }
-        else if(resp == 4){
-            System.out.println("o resultado da sua divisão é: " + z4);
+
+        else if(userinput1 == 4){
+            System.out.print("por favor escolha o primeiro numero para a multiplicação: ");
+            userinput2 = teste.nextDouble();
+
+            System.out.print("por favor escolha o segundo numero para a multiplicação: ");
+            userinput3 = teste.nextDouble();
+
+            answer = userinput2 * userinput3;
+
+            System.out.println("a resposta da sua multiplicação é " + answer);
         }
-        
+        else{
+            System.out.print("Alguma coisa deu errado por favor tente novamente: ");
+        }
+
         teste.close();
     }
-}
+};
