@@ -1,11 +1,12 @@
 public class AaaAaObjectOrientedProgramming {
-    static void main(String[] args){
 
-        // object = An entity that holds data (attributes)
-        //          And can perform actions (methods)
-        //          It is a reference data type
+    static void main(String[] args) {
 
+        Car carro = new Car();
 
-
+        System.out.println(carro.getMake());
+        System.out.println(carro.getModel());
+        System.out.println(carro.getYear());
+        System.out.println(carro.getPrice());
     }
 }
