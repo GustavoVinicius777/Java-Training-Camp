@@ -5,27 +5,22 @@ public class Car {
     private int year;
     private double price;
 
-    public Car() {
-        this.make = "Fiat";
-        this.model = "Uno";
-        this.year = 2025;
-        this.price = 9870.99;
+    public Car(String make, String model, int year, double price){
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.price = price;
     }
-
-    // getters
-    public String getMake() {
+    public String getmake(){
         return make;
     }
-
-    public String getModel() {
+    public String getmodel(){
         return model;
     }
-
-    public int getYear() {
+    public int getyear(){
         return year;
     }
-
-    public double getPrice() {
+    public double getprice(){
         return price;
     }
 }
